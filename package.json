@@ -8,10 +8,10 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "start",
-    "build": " build",
+    "start": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
