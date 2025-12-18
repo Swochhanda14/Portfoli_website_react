@@ -15,6 +15,7 @@ import {
 
 import certGraphicDesign from "./assets/c1.jpg";
 import certReactDev from "./assets/u8.jpg";
+import cv from "./assets/Swochhanda 1 cv.pdf";
 
 export const portfolioData = {
   //  Personal Information
@@ -27,7 +28,7 @@ export const portfolioData = {
     email: "swochhanda14@gmail.com",
     phone: "+977 8763422162",
     location: "Kathmandu, Nepal",
-    cvUrl: "#", // Add CV download link here
+    cvUrl: cv, // Add CV download link here
     githubUsername: "Swochhanda14",
   },
 
