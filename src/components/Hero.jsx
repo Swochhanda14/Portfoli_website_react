@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 import { portfolioData } from '../data';
 
 const Hero = () => {
-  const { hero, socialLinks } = portfolioData;
+  const { hero, socialLinks, personalInfo } = portfolioData;
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
@@ -33,10 +33,18 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex items-center space-x-6"
+            className="flex flex-wrap items-center gap-6"
           >
             <a href="#contact" className="px-8 py-3 rounded-full bg-white text-slate-900 font-bold hover:bg-cyan-50 transition-colors">
               Get in Touch
+            </a>
+            <a 
+              href={personalInfo.cvUrl} 
+              download 
+              className="flex items-center gap-2 px-8 py-3 rounded-full border border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-all"
+            >
+              <Download size={18} />
+              Download CV
             </a>
             <div className="flex items-center space-x-4">
               {socialLinks.filter(s => s.show !== false).map((social) => (

@@ -89,7 +89,7 @@ const About = () => {
                 </div>
 
                 <div className="flex gap-4">
-                    <a href={personalInfo.cvUrl} className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
+                    <a href={personalInfo.cvUrl} download className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all">
                         <Download size={18} />
                         Download CV
                     </a>

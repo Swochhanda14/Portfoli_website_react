@@ -15,7 +15,7 @@ import {
 
 import certGraphicDesign from "./assets/c1.jpg";
 import certReactDev from "./assets/u8.jpg";
-import cv from "./assets/Swochhanda 1 cv.pdf";
+import cv from "./assets/swochhanda 1 cv.pdf";
 
 export const portfolioData = {
   //  Personal Information
