@@ -189,6 +189,19 @@ export const portfolioData = {
       demoLink: "#",
       show: true,
     },
+    {
+      id: 6,
+      title: "Portfolio Website",
+      category: "Frontend",
+      image:
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+      description:
+        "A responsive portfolio website showcasing projects, skills, and experience.",
+      tech: ["HTML", "CSS", "JavaScript", "jQuery"],
+      repoLink: "https://github.com/Swochhanda14/my-portfolio",
+      demoLink: "https://swochhandak.com.np/",
+      show: true,
+    },
   ],
 
   // Services Section
