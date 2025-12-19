@@ -50,6 +50,7 @@ const Hero = () => {
               {socialLinks.filter(s => s.show !== false).map((social) => (
                 <a 
                   key={social.platform}
+                  target="_blank"
                   href={social.url} 
                   className="p-2 rounded-full bg-slate-800/50 hover:bg-slate-800 hover:text-cyan-400 transition-colors"
                 >

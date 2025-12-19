@@ -15,7 +15,7 @@ import {
 
 import certGraphicDesign from "./assets/c1.jpg";
 import certReactDev from "./assets/u8.jpg";
-import cv from "./assets/swochhanda 1 cv.pdf";
+import cv from "./assets/MyCv.pdf";
 
 export const portfolioData = {
   //  Personal Information
@@ -49,7 +49,7 @@ export const portfolioData = {
     { platform: "Twitter", url: "#", icon: Twitter, show: false },
     {
       platform: "Email",
-      url: "swochhanda14@gmail.com",
+      url: "#",
       icon: Mail,
       show: true,
     },
@@ -197,32 +197,34 @@ export const portfolioData = {
       icon: Layout,
       title: "Frontend Development",
       description:
-        "Building responsive, pixel-perfect user interfaces with React and Tailwind CSS.",
+        "Building responsive and user-friendly interfaces using React, Tailwind CSS, and modern UI practices.",
       colSpan: "md:col-span-2",
       color: "text-cyan-400",
       show: true,
     },
     {
       icon: Server,
-      title: "Backend Systems",
+      title: "Backend Development",
       description:
-        "Robust API development using Node.js, Express, and scalable databases.",
+        "Developing secure and scalable backend systems using Laravel with RESTful APIs.",
       colSpan: "md:col-span-1",
       color: "text-purple-400",
       show: true,
     },
     {
       icon: Smartphone,
-      title: "Mobile App Dev",
-      description: "Cross-platform mobile applications using React Native.",
+      title: "Web Application Development",
+      description:
+        "Full-stack web applications using React for frontend and Laravel for backend integration.",
       colSpan: "md:col-span-1",
       color: "text-pink-400",
       show: true,
     },
     {
       icon: Database,
-      title: "Database Design",
-      description: "Optimized schema design for SQL and NoSQL databases.",
+      title: "Database Design & Management",
+      description:
+        "Designing and managing efficient MySQL databases with optimized queries and relationships.",
       colSpan: "md:col-span-2",
       color: "text-blue-400",
       show: true,

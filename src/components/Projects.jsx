@@ -76,7 +76,7 @@ const Projects = () => {
                     {project.demoLink && (
                       <a 
                         href={project.demoLink} 
-                        target="_blank" 
+                        target="" 
                         rel="noopener noreferrer"
                         className="p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-cyan-500 hover:text-white transition-colors"
                       >

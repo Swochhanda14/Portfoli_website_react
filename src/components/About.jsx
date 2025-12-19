@@ -60,7 +60,7 @@ const About = () => {
                         </div>
                         <div>
                             <p className="text-slate-400 text-xs">Clients</p>
-                            <p className="text-white font-bold">50+ Happy</p>
+                            <p className="text-white font-bold">20+ Happy</p>
                         </div>
                     </div>
                 </div>
