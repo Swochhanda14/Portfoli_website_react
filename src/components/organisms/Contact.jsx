@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, MapPin, Mail, Phone } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import SectionTitle from '../atoms/SectionTitle';
+import SectionHeading from '../atoms/SectionHeading';
+import Button from '../atoms/Button';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +34,8 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-slate-950">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-cyan-400 font-medium tracking-wide uppercase mb-2">Get In Touch</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-white">Let's Work Together</h3>
+          <SectionTitle>Get In Touch</SectionTitle>
+          <SectionHeading>Let's Work Together</SectionHeading>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -129,10 +132,11 @@ const Contact = () => {
                 />
               </div>
 
-              <button
+              <Button
                 type="submit"
+                variant="gradient"
                 disabled={status === 'sending'}
-                className="w-full py-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2 disabled:opacity-70"
+                className="w-full py-4 rounded-lg gap-2 disabled:opacity-70"
               >
                 {status === 'sending' ? (
                   'Sending...'
@@ -143,7 +147,7 @@ const Contact = () => {
                     Send Message <Send size={20} />
                   </>
                 )}
-              </button>
+              </Button>
             </form>
           </motion.div>
         </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import SectionTitle from '../atoms/SectionTitle';
+import SectionHeading from '../atoms/SectionHeading';
 
 const Services = () => {
   const { services } = portfolioData;
@@ -9,8 +11,8 @@ const Services = () => {
     <section id="services" className="py-20 bg-slate-900/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-cyan-400 font-medium tracking-wide uppercase mb-2">What I Do</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-white">Services & Solutions</h3>
+          <SectionTitle>What I Do</SectionTitle>
+          <SectionHeading>Services & Solutions</SectionHeading>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Services from './components/Services';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import GitHubStats from './components/GitHubStats';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './components/organisms/Navbar';
+import Hero from './components/organisms/Hero';
+import About from './components/organisms/About';
+import Skills from './components/organisms/Skills';
+import Projects from './components/organisms/Projects';
+import Services from './components/organisms/Services';
+import Experience from './components/organisms/Experience';
+import Education from './components/organisms/Education';
+import GitHubStats from './components/organisms/GitHubStats';
+import Testimonials from './components/organisms/Testimonials';
+import Contact from './components/organisms/Contact';
+import Footer from './components/organisms/Footer';
 import { portfolioData } from './data';
 
 function App() {

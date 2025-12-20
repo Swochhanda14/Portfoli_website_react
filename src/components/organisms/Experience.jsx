@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import SectionTitle from '../atoms/SectionTitle';
+import SectionHeading from '../atoms/SectionHeading';
 
 const Experience = () => {
   const { experience } = portfolioData;
@@ -11,8 +13,8 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-slate-950 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-cyan-400 font-medium tracking-wide uppercase mb-2">My Journey</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-white">Experience & Education</h3>
+          <SectionTitle>My Journey</SectionTitle>
+          <SectionHeading>Experience & Education</SectionHeading>
         </div>
 
         <div className="relative max-w-4xl mx-auto">

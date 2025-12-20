@@ -13,9 +13,15 @@ import {
   Users,
 } from "lucide-react";
 
-import certGraphicDesign from "./assets/c1.jpg";
-import certReactDev from "./assets/u8.jpg";
-import cv from "./assets/cv.pdf";
+import {
+  personalAssets, 
+  dreamyRentalImages, 
+  elmsImages, 
+  amsImages,
+  brewboxImages,
+  kkdImages,
+  portfolioImages
+} from "./assets/images";
 
 export const portfolioData = {
   //  Personal Information
@@ -24,11 +30,11 @@ export const portfolioData = {
     role: "FrontEnd Developer",
     logoText: "< Swoc",
     logoAccent: "Xanda >",
-    bio: "I am a dedicated Frontend Developer with a passion for building robust and scalable web applications. With over 1 year of hands-on experience, I specialize in React.js and modern frontend technologies, working closely with Laravel-based backends. My approach focuses on clean, maintainable code and thoughtful UI design to deliver reliable and user-friendly experiences.",
+    bio: "I am a dedicated Frontend Developer with a passion for building robust and scalable web applications. I specialize in React.js and modern frontend technologies, working closely with Laravel-based backends. My approach focuses on clean, maintainable code and thoughtful UI design to deliver reliable and user-friendly experiences.",
     email: "swochhanda14@gmail.com",
-    phone: "+977 8763422162",
+    phone: "+977 9863422162",
     location: "Kathmandu, Nepal",
-    cvUrl: cv, // Add CV download link here
+    cvUrl: personalAssets.cv, // Add CV download link here
     githubUsername: "Swochhanda14",
   },
 
@@ -51,7 +57,7 @@ export const portfolioData = {
       platform: "Email",
       url: "#",
       icon: Mail,
-      show: true,
+      show: false,
     },
   ],
 
@@ -76,7 +82,7 @@ export const portfolioData = {
     image:
       "https://scontent.fktm7-1.fna.fbcdn.net/v/t51.82787-15/565713952_17972441600952553_8922890402426139405_n.webp?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ylxItuvBuUAQ7kNvwFwNL81&_nc_oc=AdklfCvPk0ciNekmtpWPEQ-29rAAsbWQduI20eiViIp544UOEl8hXgB2HbOh6umddS0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=RoQ0fA5OUbSdtfAx-dZ-YQ&oh=00_AfmE5z1BMzI52N-9z9yEHGy1u1NCMvUXbXfDhDOsGMtE9A&oe=6948A84C",
     stats: [
-      { value: "1+", label: "Years Experience" },
+      { value: "0.5", label: "Years Experience" },
       { value: "10+", label: "Projects Built" },
     ],
   },
@@ -88,7 +94,7 @@ export const portfolioData = {
     image:
       "https://scontent.fktm7-1.fna.fbcdn.net/v/t51.82787-15/565713952_17972441600952553_8922890402426139405_n.webp?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ylxItuvBuUAQ7kNvwFwNL81&_nc_oc=AdklfCvPk0ciNekmtpWPEQ-29rAAsbWQduI20eiViIp544UOEl8hXgB2HbOh6umddS0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=RoQ0fA5OUbSdtfAx-dZ-YQ&oh=00_AfmE5z1BMzI52N-9z9yEHGy1u1NCMvUXbXfDhDOsGMtE9A&oe=6948A84C",
     stats: [
-      { value: "01+", label: "Years Experience" },
+      { value: "0.5", label: "Years Experience" },
       { value: "10+", label: "Projects Completed" },
     ],
   },
@@ -98,25 +104,26 @@ export const portfolioData = {
     {
       category: "Frontend",
       items: [
-        { name: "React", level: 80, color: "bg-cyan-400" },
+        { name: "React", level: 75, color: "bg-cyan-400" },
         { name: "Tailwind CSS", level: 90, color: "bg-cyan-300" },
-        { name: "JavaScript", level: 85, color: "bg-blue-400" },
-        { name: "TypeScript", level: 70, color: "bg-blue-400" },
+        { name: "JavaScript", level: 60, color: "bg-blue-400" },
+        { name: "TypeScript", level: 40, color: "bg-blue-400" },
       ],
     },
     {
       category: "Backend",
       items: [
-        { name: "Node.js", level: 70, color: "bg-green-400" },
-        { name: "Laravel", level: 60, color: "bg-green-300" },
-        { name: "MySQL", level: 60, color: "bg-green-500" },
+        { name: "Node.js", level: 40, color: "bg-green-400" },
+        { name: "PHP", level: 60, color: "bg-green-200" },
+        { name: "Laravel", level: 50, color: "bg-green-300" },
+        { name: "MySQL", level: 40, color: "bg-green-500" },
       ],
     },
     {
       category: "Tools",
       items: [
-        { name: "Git", level: 90, color: "bg-orange-400" },
-        { name: "Docker", level: 50, color: "bg-blue-500" },
+        { name: "Git", level: 70, color: "bg-orange-400" },
+        { name: "UI Material", level: 80, color: "bg-purple-400" },
         { name: "Figma", level: 80, color: "bg-pink-400" },
       ],
     },
@@ -128,8 +135,16 @@ export const portfolioData = {
       id: 1,
       title: "Room Rental Portal",
       category: "Traditional Stack",
-      image:
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+      image: dreamyRentalImages.main,
+      images: dreamyRentalImages.all,
+      features: [
+        "User authentication and authorization system",
+        "Advanced room browsing with filters and search",
+        "Real-time booking management system",
+        "Admin panel for room and user management",
+        "Booking history and status tracking",
+        "Responsive design for all devices",
+      ],
       description:
         "A full-stack room rental platform allowing users to browse, book, and manage rooms. Includes an admin panel for room management, user handling, and booking control.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
@@ -141,8 +156,16 @@ export const portfolioData = {
       id: 2,
       title: "Employee Leave Management System",
       category: "Traditional Stack",
-      image:
-        "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80",
+      image: elmsImages.main,
+      images: elmsImages.all,
+      features: [
+        "Employee leave request submission",
+        "Admin approval/rejection workflow",
+        "Leave balance tracking and history",
+        "Role-based access control (Admin/Employee)",
+        "Leave type management (Sick, Casual, Annual)",
+        "Email notifications for leave status",
+      ],
       description:
         "A web-based system for managing employee leave requests, approvals, and leave records with role-based access for admins and employees.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
@@ -154,8 +177,16 @@ export const portfolioData = {
       id: 3,
       title: "Attendance Management System",
       category: "Traditional Stack",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+      image: amsImages.main,
+      images: amsImages.all,
+      features: [
+        "Daily attendance marking system",
+        "Attendance reports and analytics",
+        "Late arrival and early departure tracking",
+        "Monthly attendance summary",
+        "Export attendance data to Excel/PDF",
+        "User-friendly dashboard interface",
+      ],
       description:
         "An attendance tracking system to record, manage, and monitor employee or student attendance with reports and basic analytics.",
       tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
@@ -167,8 +198,16 @@ export const portfolioData = {
       id: 4,
       title: "BrewBox Coffee Shop E-commerce Platform",
       category: "Modern Stack",
-      image:
-        "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80",
+      image: brewboxImages.main,
+      images: brewboxImages.all,
+      features: [
+        "Product catalog with categories and filters",
+        "Shopping cart and checkout system",
+        "User authentication and profile management",
+        "Order tracking and history",
+        "Admin dashboard for product and order management",
+        "Responsive design with modern UI/UX",
+      ],
       description:
         "An e-commerce platform for a coffee shop featuring product listings, cart functionality, order management, and a responsive user interface.",
       tech: ["React", "Node.js", "Laravel", "MySQL"],
@@ -180,8 +219,16 @@ export const portfolioData = {
       id: 5,
       title: "Handcrafted Products E-commerce Platform",
       category: "Modern Stack",
-      image:
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      image: kkdImages.main,
+      images: kkdImages.all,
+      features: [
+        "Handcrafted product showcase with detailed views",
+        "User registration and authentication",
+        "Shopping cart with real-time updates",
+        "Secure order processing and payment integration",
+        "Product search and filtering",
+        "MERN stack architecture for scalability",
+      ],
       description:
         "An online marketplace for handcrafted products with product browsing, user authentication, cart functionality, and order processing.",
       tech: ["React", "Node.js", "Express.js", "MongoDB"],
@@ -193,8 +240,16 @@ export const portfolioData = {
       id: 6,
       title: "Portfolio Website",
       category: "Frontend",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+      image: portfolioImages.main,
+      images: portfolioImages.all,
+      features: [
+        "Responsive design for all screen sizes",
+        "Interactive project showcase",
+        "Skills and experience timeline",
+        "Contact form integration",
+        "Smooth scrolling and animations",
+        "Clean and modern UI design",
+      ],
       description:
         "A responsive portfolio website showcasing projects, skills, and experience.",
       tech: ["HTML", "CSS", "JavaScript", "jQuery"],
@@ -282,20 +337,20 @@ export const portfolioData = {
   // Experience Section
   experience: [
     {
-      title: "FrontEnd Developer",
-      company: "Personal Projects & Freelancing",
-      period: "2023 - 2024",
+      title: "Frontend Developer Intern",
+      company: "FrontBooth Inc.",
+      period: "2025 - Present",
       description:
-        "Developed various React-based applications, focusing on clean code, responsive design, and user experience. Built several portfolio pieces and worked with modern frontend tools.",
+        "Working as a frontend intern, contributing to real-world React applications, implementing responsive UI components, and learning best practices for scalable web development.",
       type: "Work",
       show: true,
     },
     {
       title: "Computer Science Coursework",
       company: "Self-Taught & Online Platforms",
-      period: "2022 - 2023",
+      period: "2022 - 2025",
       description:
-        "Focused on mastering JavaScript, React, and Laravel. Completed multiple comprehensive bootcamps and projects to build a solid foundation in web development.",
+        "Focused on mastering JavaScript, React, and Laravel. Completed multiple comprehensive bootcamps and personal projects to build a solid foundation in web development.",
       type: "Education",
       show: true,
     },
@@ -336,16 +391,16 @@ export const portfolioData = {
       name: "Graphic Design Masterclass",
       issuer: "Animax Anmation Academy",
       date: "2023",
-      link: certGraphicDesign,
-      image: certGraphicDesign,
+      link: personalAssets.certGraphicDesign,
+      image: personalAssets.certGraphicDesign,
       show: true,
     },
     {
       name: "Frontend Development & React js",
       issuer: "Udemy",
       date: "2025",
-      link: certReactDev,
-      image: certReactDev,
+      link: personalAssets.certReactDev,
+      image: personalAssets.certReactDev,
       show: true,
     },
   ],

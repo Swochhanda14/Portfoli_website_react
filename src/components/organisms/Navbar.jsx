@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

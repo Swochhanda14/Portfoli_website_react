@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Star, GitFork, Users, BookOpen, ExternalLink } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
 
 const GitHubStats = () => {
   const { personalInfo } = portfolioData;
@@ -16,8 +16,6 @@ const GitHubStats = () => {
         if (!response.ok) throw new Error('Failed to fetch GitHub data');
         const data = await response.json();
         
-        // In a real scenario, you might want to fetch repo colors or more detailed stats
-        // For now, we'll use the basic user data
         setStats({
           repos: data.public_repos,
           followers: data.followers,
@@ -37,7 +35,7 @@ const GitHubStats = () => {
     fetchGitHubStats();
   }, [personalInfo.githubUsername]);
 
-  if (loading) return null; // Or a subtle skeleton loader
+  if (loading) return null; 
 
   return (
     <section id="github" className="py-20 bg-slate-950">

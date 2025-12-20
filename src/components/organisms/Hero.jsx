@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import Button from '../atoms/Button';
+import SocialLinks from '../molecules/SocialLinks';
 
 const Hero = () => {
-  const { hero, socialLinks, personalInfo } = portfolioData;
+  const { hero, personalInfo } = portfolioData;
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
@@ -35,28 +37,20 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-wrap items-center gap-6"
           >
-            <a href="#contact" className="px-8 py-3 rounded-full bg-white text-slate-900 font-bold hover:bg-cyan-50 transition-colors">
+            <Button href="#contact" variant="primary" className="px-8 py-3">
               Get in Touch
-            </a>
-            <a 
+            </Button>
+            <Button 
               href={personalInfo.cvUrl} 
+              variant="outline"
               download 
-              className="flex items-center gap-2 px-8 py-3 rounded-full border border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-all"
+              className="gap-2 px-8 py-3"
             >
               <Download size={18} />
               Download CV
-            </a>
+            </Button>
             <div className="flex items-center space-x-4">
-              {socialLinks.filter(s => s.show !== false).map((social) => (
-                <a 
-                  key={social.platform}
-                  target="_blank"
-                  href={social.url} 
-                  className="p-2 rounded-full bg-slate-800/50 hover:bg-slate-800 hover:text-cyan-400 transition-colors"
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+              <SocialLinks />
             </div>
           </motion.div>
 

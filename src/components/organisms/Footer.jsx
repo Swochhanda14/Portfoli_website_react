@@ -1,9 +1,10 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import SocialLinks from '../molecules/SocialLinks';
 
 const Footer = () => {
-  const { personalInfo, socialLinks, navLinks } = portfolioData;
+  const { personalInfo, navLinks } = portfolioData;
 
   return (
     <footer className="bg-slate-950 pt-20 pb-10 border-t border-slate-900">
@@ -16,16 +17,8 @@ const Footer = () => {
             <p className="text-slate-400 max-w-xs">
               Building digital experiences with passion and precision. Let's create something amazing together.
             </p>
-            <div className="flex space-x-4 pt-4">
-              {socialLinks.filter(s => s.show !== false).map((social) => (
-                <a 
-                  key={social.platform}
-                  href={social.url} 
-                  className="p-2 rounded-full bg-slate-900 hover:bg-slate-800 hover:text-cyan-400 transition-colors"
-                >
-                  <social.icon size={20} />
-                </a>
-              ))}
+            <div className="pt-4">
+              <SocialLinks className="bg-transparent" />
             </div>
           </div>
 

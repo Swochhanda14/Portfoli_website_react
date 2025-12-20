@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { portfolioData } from '../data';
+import { portfolioData } from '../../data';
+import SectionTitle from '../atoms/SectionTitle';
+import SectionHeading from '../atoms/SectionHeading';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,8 +31,8 @@ const Testimonials = () => {
 
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-cyan-400 font-medium tracking-wide uppercase mb-2">Testimonials</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-white">Client Reviews</h3>
+          <SectionTitle>Testimonials</SectionTitle>
+          <SectionHeading>Client Reviews</SectionHeading>
         </div>
 
         <div className="max-w-4xl mx-auto relative">
