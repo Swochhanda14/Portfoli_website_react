@@ -198,8 +198,8 @@ export const portfolioData = {
       description:
         "A responsive portfolio website showcasing projects, skills, and experience.",
       tech: ["HTML", "CSS", "JavaScript", "jQuery"],
-      repoLink: "https://github.com/Swochhanda14/my-portfolio",
-      demoLink: "https://swochhandak.com.np/",
+      repoLink: "https://github.com/Swochhanda14/My-Personal-Portfolio-",
+      demoLink: "https://swochhanda14.github.io/My-Personal-Portfolio-/",
       show: true,
     },
   ],
