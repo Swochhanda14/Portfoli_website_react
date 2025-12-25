@@ -2,6 +2,7 @@
 import certGraphicDesign from "./c1.jpg";
 import certReactDev from "./u8.jpg";
 import cv from "./cv.pdf";
+import img from "./img.jpeg";
 
 // DreamyRental Images
 import dr1 from "./Dreamyrental/1.PNG";
@@ -31,6 +32,7 @@ export const personalAssets = {
   cv,
   certGraphicDesign,
   certReactDev,
+  img,
 };
 
 export const dreamyRentalImages = {

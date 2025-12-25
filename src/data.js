@@ -79,8 +79,7 @@ export const portfolioData = {
     headline: "Building Digital Experiences",
     description:
       "I craft reliable, scalable, and visually stunning web applications using modern technologies.",
-    image:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t51.82787-15/565713952_17972441600952553_8922890402426139405_n.webp?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ylxItuvBuUAQ7kNvwFwNL81&_nc_oc=AdklfCvPk0ciNekmtpWPEQ-29rAAsbWQduI20eiViIp544UOEl8hXgB2HbOh6umddS0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=RoQ0fA5OUbSdtfAx-dZ-YQ&oh=00_AfmE5z1BMzI52N-9z9yEHGy1u1NCMvUXbXfDhDOsGMtE9A&oe=6948A84C",
+    image: personalAssets.img,
     stats: [
       { value: "0.5", label: "Years Experience" },
       { value: "10+", label: "Projects Built" },
@@ -91,8 +90,7 @@ export const portfolioData = {
   about: {
     title: "About Me",
     subtitle: "Passionate About Technology",
-    image:
-      "https://scontent.fktm7-1.fna.fbcdn.net/v/t51.82787-15/565713952_17972441600952553_8922890402426139405_n.webp?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ylxItuvBuUAQ7kNvwFwNL81&_nc_oc=AdklfCvPk0ciNekmtpWPEQ-29rAAsbWQduI20eiViIp544UOEl8hXgB2HbOh6umddS0&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=RoQ0fA5OUbSdtfAx-dZ-YQ&oh=00_AfmE5z1BMzI52N-9z9yEHGy1u1NCMvUXbXfDhDOsGMtE9A&oe=6948A84C",
+    image: personalAssets.img,
     stats: [
       { value: "0.5", label: "Years Experience" },
       { value: "10+", label: "Projects Completed" },
